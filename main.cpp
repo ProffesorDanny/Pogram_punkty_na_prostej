@@ -34,7 +34,7 @@ if(wynik2 == 0 || wynik1 == 0)
 }
 
   tangens = wynik2 / wynik1;
-
+  
 
   return tangens;
 
@@ -50,6 +50,7 @@ int main()
 
     float tangens1 = 0;
     float tangens2 = 0;
+    float tangens3 = 0;
     bool czyprawda = false;
 
     cin >> x[0];
@@ -73,9 +74,10 @@ int main()
     {
      tangens1 = licztangens(x, y);
      tangens2 = licztangens(y, z);
+     tangens3 = licztangens(x, z);
 
 
-     if(tangens1 == tangens2)
+     if(tangens1 == tangens2 && tangens3 == tangens1)
      {
          czyprawda = true;
      }
